@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FlyLink</title>
+    <!-- Custom fonts for this template-->
+    <link href="https://flylink.cc/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+          
+<link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'> 
+    <link href="https://flylink.cc/static/css/sb-admin-2.css" rel="stylesheet">
+  <style>
+      body { font-family:"Tajawal" !important }
+      div.icons a i {
+    font-size: 1.2rem;
+    margin: 6px 0;
+}
+div.icons a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+  </style>
+</head>
+<body class="bg-light">
+<div class="container text-center">
+  <img src="https://www.korainfo.info/wp-content/uploads/unem.png" style="max-width:7rem;
+  margin: 1.5rem 0;">
+<form id="form" style="
+    border-radius: 2rem;
+    box-shadow: -4px 0px 1rem 0rem rgb(0 0 0 / 4%);
+    display: grid;
+    justify-content: center;
+    padding: 1.3rem 0 0 0;
+  " action="http://iscae.xyz/unem.php" method="GET">
+  <div class="form-group text-center">
+    <label class="display-4 text-center" style="font-size:1.5rem">أدخل رقم  الباكلوريا</label>
+    <input type="number" name="n" class="form-control text-center" style="max-width:17rem;margin: 1rem auto;">
+  </div>
+  <button id="sub" type="submit" class=" btn btn-info" style="
+      margin: -13px auto 1rem;
+      padding: 9px 2rem;
+  ">دخول المجموعة</button>
+
+</form>
+<div class="alert alert-danger text-center alert-dismissible fade show" role="alert" style="max-width:27rem; display: none; margin: 1rem auto;">
+ لا توجد بيانات الرجاء إدخال الرقم الصحيح  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<hr>
+
+ <!-- Whatsapp -->
+  <a class="btn text-light" style="text-align: center;background-color: #25d366;max-width: 25rem;font-size: 1.2rem;" href="https://api.whatsapp.com/send/?phone=22236199323&text&app_absent=0" role="button"><i class="fab fa-whatsapp" style="
+    float: left;
+    font-size: 1.5rem;
+"></i>whatsapp | واتساب
+</a>
+
+ <div class="icons text-center" style="margin:2rem auto;">
+  <!-- Facebook -->
+  <a class="btn text-light" style="background-color: #3b5998;" href="https://www.facebook.com/unem.mr/" role="button"
+    ><i class="fab fa-facebook-f"></i
+  ></a>
+
+
+ 
+</div>
+</div>
+
+<script src="https://flylink.cc/static/vendor/jquery/jquery.min.js"></script>
+<script src="https://flylink.cc/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://flylink.cc/static/js/sb-admin-2.min.js"></script>
+</body>
+<script src="https://flylink.cc/static/vendor/jquery/jquery.min.js"></script>
+<script src="https://flylink.cc/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://flylink.cc/static/js/sb-admin-2.min.js"></script>
+<script type="text/javascript">
+  $("#sub").click(function(e){
+    n=parseInt($("input").val());
+   // if (n>=0) console.log(n);
+    if (n>=0) {
+     console.log(n);
+    }
+  })
+</script>
+</html>
