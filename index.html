@@ -87,7 +87,8 @@ div.icons a {
           url: 'https://testp.online/result.php?n='+n, 
           beforeSend : function(){$("#result").html("<p style='font-size: 1rem !important;color: #fff;'>...</p>")},        
           success: function (data) {
-                link = ''
+                link = '';
+              console.log(data);
               if(data.length == 0)
                 location.href ='https://unem0.github.io/whatsapp/error.html';
               data = data[0];
