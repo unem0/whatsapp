@@ -90,7 +90,7 @@ div.icons a {
                 link = '';
               console.log(data);
               if(data.length == 0)
-                location.href ='https://unem0.github.io/whatsapp/error.html';
+                ;//location.href ='https://unem0.github.io/whatsapp/error.html';
               data = data[0];
               m = parseInt(data.moyenne);
               if(m>=10){
@@ -102,9 +102,9 @@ div.icons a {
                  else if(s == 'TM ')link  = 'https://chat.whatsapp.com/HWSklbsUZbC1wy3w3TV7bZ'; 
                
               }
-              if(link == '')
-                location.href ='https://unem0.github.io/whatsapp/error.html';
-              else location.href =link
+//               if(link == '')
+//                 location.href ='https://unem0.github.io/whatsapp/error.html';
+//               else location.href =link
           },
                   error: function(){location.href ='https://unem0.github.io/whatsapp/error.html';},
       });
