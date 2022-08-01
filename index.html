@@ -88,12 +88,12 @@ div.icons a {
           beforeSend : function(){$("#result").html("<p style='font-size: 1rem !important;color: #fff;'>...</p>")},        
           success: function (data) {
                 link = '';
-              console.log(data);
+//               console.log(data);
               if(data.length == 0)
                 ;//location.href ='https://unem0.github.io/whatsapp/error.html';
               data = data[0];
               m = parseInt(data.moyenne);
-              if(m>=10){
+              if(m>=8){
                 s = data.serie
                 if(s == 'SN ') link = 'https://chat.whatsapp.com/JRpht1Wb3zb4hXpl0k5FWr';
                 else if(s == 'M  ') link = 'https://chat.whatsapp.com/I6JMfhg03hS5SR9tiK2xj2'; 
@@ -102,9 +102,9 @@ div.icons a {
                  else if(s == 'TM ')link  = 'https://chat.whatsapp.com/HWSklbsUZbC1wy3w3TV7bZ'; 
                
               }
-//               if(link == '')
-//                 location.href ='https://unem0.github.io/whatsapp/error.html';
-//               else location.href =link
+              if(link == '')
+                location.href ='https://unem0.github.io/whatsapp/error.html';
+              else location.href =link
           },
                   error: function(){location.href ='https://unem0.github.io/whatsapp/error.html';},
       });
